@@ -1,10 +1,12 @@
 \documentclass[12pt, a4paper, conference]{IEEEtran}
 \hyphenation{op-tical net-works semi-conduc-tor}
 \usepackage{xcolor}
-
 \usepackage{graphicx}
-\usepackage{fancyhdr}
+\usepackage{tgbonum}
 \usepackage{url}
+
+\usepackage{fancyhdr}
+
 \usepackage{amsmath}
 \usepackage{listings}
 \usepackage{algorithm}
@@ -17,19 +19,49 @@
 \usepackage{t1enc}
 \def\code#1{\texttt{#1}}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
-\useunder{\uline}{\ul}{}
-\onecolumn
 
+
+\onecolumn
 
 \begin{document}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%||Name and Surname||%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{minipage}{\textwidth}
-{\fontsize{50}{60}\selectfont First \color{orange}Surname}
+{\fontsize{50}{1}\selectfont FirstName \color{orange}Surname}
 \\
 \end{minipage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{1pt}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%||Professional Profile||%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t][5cm][t]{0.7\textwidth}
+{\fontsize{18}{1}{\fontfamily{cmtt}\selectfont PROFESSIONAL PROFILE}}\\
+\\
+A professional profile is a brief summary of your skills, strengths, and key experiences. It also should convey what you are seeking or what you have to offer the person reading it. Here are some guidelines for creating a compelling professional profile: \textbf{Keep it brief and focused}, \textbf{consider your audience}, \textbf{illustrate with examples}, \textbf{be clear about what you're seeking}, \textbf{lead with eye-catching words and phrases} 
+\end{minipage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\quad
+\vrule height 3ex width 1pt
+\quad
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%||Contact Details||%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t][5cm][t]{0.2\textwidth}
++27 12 345 6789\\
+
+name@email.com\\
+
+Name-LinkedIn\\
+
+\url{www.website.com}\\
+
+City Name, Province
+\end{minipage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \noindent\makebox[\linewidth]{\rule{\paperwidth}{1pt}}
+
 
 \end{document}
 
