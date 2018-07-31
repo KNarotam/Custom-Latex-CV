@@ -21,8 +21,10 @@
 \usepackage{anyfontsize}
 \usepackage{t1enc}
 \def\code#1{\texttt{#1}}
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+\newcommand{\HRule}{\textcolor{bordercolour}{\rule{\linewidth}{0.5mm}}} % Defines a new command for the horizontal lines, change thickness here
 
+\colorlet{bordercolour}{gray!90}
+\newcommand{\borderthickness}{0.5pt}
 
 \onecolumn
 \fontfamily{\sffamily}
@@ -37,7 +39,7 @@
 \end{minipage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\noindent\makebox[\linewidth]{\rule{\paperwidth}{1pt}}
+\noindent\makebox[\linewidth]{\textcolor{bordercolour}{\rule{\paperwidth}{\borderthickness}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%||Professional Profile||%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -49,7 +51,7 @@ A professional profile is a brief summary of your skills, strengths, and key exp
 \end{minipage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \quad
-\vrule height 3ex width 1pt
+\textcolor{bordercolour}{\vrule height 3ex width \borderthickness}
 \quad
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%||Contact Details||%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -66,7 +68,7 @@ City Name, Province
 \end{minipage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\noindent\makebox[\linewidth]{\rule{\paperwidth}{1pt}}
+\noindent\makebox[\linewidth]{\textcolor{bordercolour}{\rule{\paperwidth}{\borderthickness}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%||Key Skills||%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -84,7 +86,7 @@ Skill 4
 \end{minipage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \quad
-\vrule height 4ex width 1pt
+\textcolor{bordercolour}{\vrule height 4ex width \borderthickness}
 \quad
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%||Work Experience||%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -110,7 +112,7 @@ Company 2 blah blah blah.
 \end{minipage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\noindent\makebox[1cm]{\rule{\paperwidth}{1pt}}
+\noindent\makebox[0cm]{\textcolor{bordercolour}{\rule{12.85cm}{\borderthickness}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%||Education||%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -131,17 +133,17 @@ Location\\
 \end{minipage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \quad
-\vrule height 3ex width 1pt
+\textcolor{bordercolour}{\vrule height 3ex width \borderthickness}
 \quad
 	
 \begin{minipage}[t][5cm][t]{0.3\textwidth}
 \color{white}Test
 \end{minipage}
 \quad
-\vrule height 4ex width 1pt
+\textcolor{bordercolour}{\vrule height 4ex width \borderthickness}
 \quad
 
-\noindent\makebox[\linewidth]{\rule{\paperwidth}{1pt}}
+\noindent\makebox[\linewidth]{\textcolor{bordercolour}{\rule{\paperwidth}{\borderthickness}}}
 
 
 \end{document}
