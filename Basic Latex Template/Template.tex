@@ -5,6 +5,9 @@
 \usepackage{tgbonum}
 \usepackage{url}
 
+\usepackage[scaled]{helvet} % For Helvetica font
+\renewcommand\familydefault{\sfdefault} 
+\usepackage[T1]{fontenc}
 \usepackage{fancyhdr}
 
 \usepackage{amsmath}
@@ -22,6 +25,7 @@
 
 
 \onecolumn
+\fontfamily{\sffamily}
 
 \begin{document}
 
@@ -39,7 +43,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{minipage}[t][5cm][t]{0.7\textwidth}
-{\fontsize{18}{1}{\fontfamily{cmtt}\selectfont PROFESSIONAL PROFILE}}\\
+{\fontsize{18}{1}{\selectfont PROFESSIONAL PROFILE}}\\
 \\
 A professional profile is a brief summary of your skills, strengths, and key experiences. It also should convey what you are seeking or what you have to offer the person reading it. Here are some guidelines for creating a compelling professional profile: \textbf{Keep it brief and focused}, \textbf{consider your audience}, \textbf{illustrate with examples}, \textbf{be clear about what you're seeking}, \textbf{lead with eye-catching words and phrases} 
 \end{minipage}
@@ -67,7 +71,7 @@ City Name, Province
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%||Key Skills||%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{minipage}[t][5cm][t]{0.3\textwidth}
-{\fontsize{18}{1}{\fontfamily{cmtt}\selectfont KEY SKILLS}}\\
+{\fontsize{18}{1}{\selectfont KEY SKILLS}}\\
 \\
 Skill 1\\
 
@@ -85,7 +89,7 @@ Skill 4
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%||Work Experience||%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{minipage}[t][5cm][t]{0.6\textwidth}
-{\fontsize{18}{1}{\fontfamily{cmtt}\selectfont WORK EXPERIENCE}}\\
+{\fontsize{18}{1}{\selectfont WORK EXPERIENCE}}\\
 \\
 JOB POSITION/TITLE\\
 Company Name/Location/2008-Present\\
@@ -106,12 +110,12 @@ Company 2 blah blah blah.
 \end{minipage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\noindent\makebox[0cm]{\rule{12.93cm}{1pt}}
+\noindent\makebox[1cm]{\rule{\paperwidth}{1pt}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%||Education||%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{minipage}[t][5cm][t]{0.3\textwidth}
-{\fontsize{18}{1}{\fontfamily{cmtt}\selectfont EDUCATION}}\\
+{\fontsize{18}{1}{\selectfont EDUCATION}}\\
 \\
 Degree name/Major\\
 UNIVERSITY NAME\\
