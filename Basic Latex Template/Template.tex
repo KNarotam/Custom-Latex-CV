@@ -5,6 +5,9 @@
 \usepackage{tgbonum}
 \usepackage{url}
 
+\usepackage[scaled]{helvet} % For Helvetica font
+\renewcommand\familydefault{\sfdefault} 
+\usepackage[T1]{fontenc}
 \usepackage{fancyhdr}
 
 \usepackage{amsmath}
@@ -18,10 +21,13 @@
 \usepackage{anyfontsize}
 \usepackage{t1enc}
 \def\code#1{\texttt{#1}}
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+\newcommand{\HRule}{\textcolor{bordercolour}{\rule{\linewidth}{0.5mm}}} % Defines a new command for the horizontal lines, change thickness here
 
+\colorlet{bordercolour}{gray!90}
+\newcommand{\borderthickness}{0.5pt}
 
 \onecolumn
+\fontfamily{\sffamily}
 
 \begin{document}
 
@@ -33,19 +39,19 @@
 \end{minipage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\noindent\makebox[\linewidth]{\rule{\paperwidth}{1pt}}
+\noindent\makebox[\linewidth]{\textcolor{bordercolour}{\rule{\paperwidth}{\borderthickness}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%||Professional Profile||%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{minipage}[t][5cm][t]{0.7\textwidth}
-{\fontsize{18}{1}{\fontfamily{cmtt}\selectfont PROFESSIONAL PROFILE}}\\
+{\fontsize{18}{1}{\selectfont PROFESSIONAL PROFILE}}\\
 \\
 A professional profile is a brief summary of your skills, strengths, and key experiences. It also should convey what you are seeking or what you have to offer the person reading it. Here are some guidelines for creating a compelling professional profile: \textbf{Keep it brief and focused}, \textbf{consider your audience}, \textbf{illustrate with examples}, \textbf{be clear about what you're seeking}, \textbf{lead with eye-catching words and phrases} 
 \end{minipage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \quad
-\vrule height 3ex width 1pt
+\textcolor{bordercolour}{\vrule height 3ex width \borderthickness}
 \quad
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%||Contact Details||%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -62,12 +68,12 @@ City Name, Province
 \end{minipage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\noindent\makebox[\linewidth]{\rule{\paperwidth}{1pt}}
+\noindent\makebox[\linewidth]{\textcolor{bordercolour}{\rule{\paperwidth}{\borderthickness}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%||Key Skills||%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{minipage}[t][5cm][t]{0.3\textwidth}
-{\fontsize{18}{1}{\fontfamily{cmtt}\selectfont KEY SKILLS}}\\
+{\fontsize{18}{1}{\selectfont KEY SKILLS}}\\
 \\
 Skill 1\\
 
@@ -80,12 +86,12 @@ Skill 4
 \end{minipage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \quad
-\vrule height 4ex width 1pt
+\textcolor{bordercolour}{\vrule height 4ex width \borderthickness}
 \quad
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%||Work Experience||%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{minipage}[t][5cm][t]{0.6\textwidth}
-{\fontsize{18}{1}{\fontfamily{cmtt}\selectfont WORK EXPERIENCE}}\\
+{\fontsize{18}{1}{\selectfont WORK EXPERIENCE}}\\
 \\
 JOB POSITION/TITLE\\
 Company Name/Location/2008-Present\\
@@ -106,12 +112,12 @@ Company 2 blah blah blah.
 \end{minipage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\noindent\makebox[0cm]{\rule{12.93cm}{1pt}}
+\noindent\makebox[0cm]{\textcolor{bordercolour}{\rule{12.85cm}{\borderthickness}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%||Education||%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{minipage}[t][5cm][t]{0.3\textwidth}
-{\fontsize{18}{1}{\fontfamily{cmtt}\selectfont EDUCATION}}\\
+{\fontsize{18}{1}{\selectfont EDUCATION}}\\
 \\
 Degree name/Major\\
 UNIVERSITY NAME\\
@@ -127,17 +133,17 @@ Location\\
 \end{minipage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \quad
-\vrule height 3ex width 1pt
+\textcolor{bordercolour}{\vrule height 3ex width \borderthickness}
 \quad
 	
 \begin{minipage}[t][5cm][t]{0.3\textwidth}
 \color{white}Test
 \end{minipage}
 \quad
-\vrule height 4ex width 1pt
+\textcolor{bordercolour}{\vrule height 4ex width \borderthickness}
 \quad
 
-\noindent\makebox[\linewidth]{\rule{\paperwidth}{1pt}}
+\noindent\makebox[\linewidth]{\textcolor{bordercolour}{\rule{\paperwidth}{\borderthickness}}}
 
 
 \end{document}
